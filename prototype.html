@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Person(firsName, lastName) {
+        this.firsName = firsName;
+        this.lastName = lastName;
+        this.energy = 100;
+        this.sayHello = (name) =>
+          console.log(
+            `hello ${name}, my name is ${this.firsName} ${this.lastName}`
+          );
+        this.work = (belajar) => {
+          energyConsum = belajar * 10;
+          this.energy = this.energy - energyConsum;
+          console.log(eko.energy);
+        };
+      }
+
+      const eko = new Person('Eko', 'Kurniawan');
+
+      const fuad = new Person('Fuad', 'Hasan');
+    </script>
+  </body>
+</html>
