@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Employee(firsName) {
+        this.firsName = firsName;
+        this.sayHello = (name) =>
+          console.log(`Hello ${name}, My name is ${firsName}`);
+      }
+
+      function Manager(firsName, lastName) {
+        Employee.call(this, firsName);
+        this.lastName = lastName;
+      }
+
+      const eko = new Employee('Eko');
+      const budy = new Manager('Ferdi', 'sambo');
+      console.log(budy);
+    </script>
+  </body>
+</html>
