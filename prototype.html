@@ -23,6 +23,14 @@
         };
       }
 
+      Person.prototype.sayBye = (name) => {
+        console.log(`Good bye ${name}`);
+      };
+
+      Person.prototype.run = function () {
+        console.log(`${this.firsName} is Running`);
+      };
+
       const eko = new Person('Eko', 'Kurniawan');
 
       const fuad = new Person('Fuad', 'Hasan');
